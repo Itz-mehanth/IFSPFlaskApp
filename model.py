@@ -71,7 +71,7 @@ def classify_image(image_path):
     # Get the index of the class with the highest probability
     predicted_class = np.argmax(output_data)
 
-    # Get the confidence level of the predicted class
+    # Get the confidence level of the predicted class<
     confidence = output_data[0][predicted_class]
 
     return {"predicted_class": predicted_class, "confidence": confidence}
@@ -131,3 +131,4 @@ def classify_endpoint():
 if __name__ == "__main__":
     # Run the app, ensuring the uploads directory is created before startup
     app.run(host="0.0.0.0", port=5000)
+    # app.run()
